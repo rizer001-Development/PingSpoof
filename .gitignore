@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+
+# Build output. build/libs/ is committed so the mod jar can be downloaded directly from GitHub.
+build/classes/
+build/generated/
+build/loom-cache/
+build/processIncludeJars/
+build/publications/
+build/reports/
+build/resources/
+build/test-results/
+build/tmp/
+
+# Loom dev run directory
+run/
+
+# IDE
+out/
+.idea/
+*.iml
+.vscode/
+
+# OS / misc
+.DS_Store
+*.class

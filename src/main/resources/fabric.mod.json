@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "pingspoof",
+	"version": "${version}",
+	"name": "Ping Spoof",
+	"description": "Client-side ping spoofing: answers the server's keep-alive packets instantly (minimal ping) or with a configurable delay to fake your ping.",
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://fabricmc.net/"
+	},
+	"license": "AGPL-3.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.pingspoof.PingSpoofMod"
+		],
+		"client": [
+			"com.pingspoof.client.PingSpoofClient"
+		]
+	},
+	"mixins": [
+		"pingspoof.mixins.json",
+		{
+			"config": "pingspoof.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
