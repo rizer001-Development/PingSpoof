@@ -40,7 +40,7 @@ Note: the server measures the round-trip time of the connection, so the configur
 
 ## Configuration
 
-Settings are saved to `config/pingspoof.json` in your `.minecraft` folder:
+Settings are saved to `config/pingspoof.json` in your `root` game directory:
 
 ```json
 {
